@@ -27,6 +27,14 @@ body {
 }
 #item3 {
     grid-area: main;
+    grid-area: main;
+    height: 10vh;
+    border-radius: 100%;
+    background-color: var(--lightBlue);
+    border: 5px solid black;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
 }
 div div { 
     height: 120px;
@@ -44,4 +52,7 @@ div div {
         background-color: var(--lightGrey);
     }
 }
-
+@keyframes blink {
+    from {background-color: var(--lightBlue); }
+    to {background-color: var(--eggplant) }
+}
